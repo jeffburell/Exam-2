@@ -14,19 +14,73 @@
     <hr>
         <select onchange="MenuChoice()" id="menu">
             <option>Select Opperation</option>
-            <option></option>
-            <option>Add Customer</option>
-            <option>Change Customer Data</option>
-            <option>Delete Customer</option>
-            <option>Jeff Burell</option>
+            <option>Get Product List</option>
+            <option>Add Product</option>
+            <option>Change Product Data</option>
+            <option>Delete Product</option>
+            <option>Select One</option>
         </select>
     <hr>    
 </section>
-<section id= "one" class= "one"></section>
-<section id= "two" class= "two"></section>
-<section id= "three" class= "three"></section>
-<section id= "four" class= "four"></section>
-<section id= "five" class= "five"></section>
+<section id= "one" class= "one">
+    <h2>Get Product List</h2>
+    <hr>
+<br>
+<label>Please enter a Category ID:</label>
+<input type= "text" id="categid">
+    <br>
+<button onclick="GetCategory()" id="id">Get Product</button>
 
+<hr>
+<br>
+<label id="categorydisplay">Display products here</label>    
+</section>
+<section id= "two" class= "two">
+    <h2>Add Product Category</h2>
+    <hr>
+ <br>
+ <label>Please enter the Product Name: </label>
+ <input type="text" id="productname">
+ <br>
+ <label>Please enter the Product Discription: </label>
+ <input type="text" id="productdesc">
+ <br>
+ <button onclick="CreateProduct()" id="newproduct">Add a New Product</button>
+ <br>
+ <hr>
+ <br>
+ <label id="addresult">The operation's result will display here.</label>
+</section>
+<section id= "three" class= "three">
+    <h2>Change Product Data</h2>
+ <label>Please enter the Category ID: </label>
+ <input type="text" id="catid">
+ <br>
+ <label>Please enter the Category Description: </label>
+ <input type="text" id="catdesc">
+ <br>
+ <button onclick="ChangeOrder()" id="changeorder">Submit Change</button>
+ <br>
+ <hr>
+ <br>
+ <label id="changeresult">The operation's result will display here.</label>
+</section>
+<section id= "four" class= "four">
+        <h2>Delete Product</h2>
+ <label>Please Enter a Product ID:</label>
+ <input type="text" id="deleteproductid">
+ <br>
+ <button onclick="DeleteProduct()" id="deletecust">Delete Product</button>
+ <hr>
+ <br>
+ <label id="deleteresult">The operation's result will display here.</label>
+</section>
+<section id= "five" class= "five">
+    <h2>Koala Picture</h2>
+    <img src="images/Koala.jpg" id="koalapicture">
+</section>
+<footer>
+     Jeff Burell - jburell@uab.edu
+</footer>
 </body>
 </html>
